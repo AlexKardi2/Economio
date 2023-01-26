@@ -9,11 +9,12 @@ public class Status : MonoBehaviour
     //Balansing variables
     public float gameSpeed = 1f;
     public int storageMultipler = 5;
+    public float requiredProfitability = 0.25f;
  
     //Variables for ingame change may be
 
     //Helpful Links
-    //Market market= ADD
+    //Market market=GameObject.Find("Market").GetComponent<Market>();
 
     void Awake()
     {
@@ -24,10 +25,23 @@ public class Status : MonoBehaviour
         {
             s = this;
         }
-        
 
         Item.LoadItems();
-        Receipt.LoadReceipts();
+        Recipe.LoadReceipts();
+    }
+    void Start()
+    {
+        /*
+        TestItem second = new() { number = 2 };
+        TestItem third = new() { number = 3 };
+        Debug.Log(second == third);
+        Debug.Log(second.number + " " + third.number);
+        
+        Market market = GameObject.Find("Market").GetComponent<Market>();
+        Market newMarket = new();
+        Factory newSecondMarket = new();
+        Factory factiry = GameObject.Find("Factory").GetComponent<Factory>();
+        print(market == newMarket);*/
     }
 
 
