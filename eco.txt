@@ -1,1 +1,1 @@
-made some helpful function
+Implement another helpful function
