@@ -1,4 +1,0 @@
-Second Function on empty file
-
-Feature in Second realized
-Bugs catched
